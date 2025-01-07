@@ -66,8 +66,9 @@ class GameView {
 
     el_about.innerHTML =
       `
-        <p>This is some text</p>
-        <p>Another one</p> 
+        <p>This is a simple html5 game created by Vplus265 (Valentino Phiri)</p>
+        <p>It is open source at https://github.com/vplus265/VBrickBreaker</p> 
+        <p>If you happen to work on it, let me know how cool it end up to be. I am curious (says vplus265) </p>
          
         <button id="el_btn_back" class="gui_btn">Back</button>
       `;
