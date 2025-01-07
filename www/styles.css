@@ -4,6 +4,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#el_h1{
+  justify-content:center ;
+  align-items: center ;
+  font-weight: bolder;
+  color: rgba(120, 0, 80, 1);
+  background-color: rgba(120, 0, 80, 0.1);
+  padding: 0.7em;
+}
+
 .gui_btn {
   background-color: rgba(120, 0, 80, 1);
   color: white;

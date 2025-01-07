@@ -82,6 +82,7 @@ class GameView {
     this.hide_all();
 
     el_gui_menu.style.display = 'flex';
+    el_h1.style.display = 'flex';
 
     // Clear existing buttons
     while (el_gui_menu.firstChild) {
