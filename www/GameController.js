@@ -72,8 +72,8 @@ class GameController {
       this.model.restart();
       el_level.innerText = `Level: ${this.model.level}`;
 
+      // When the game is loading
       el_btn_menu.disabled = true;
-
       el_btn_menu.textContent = "[:Loading:]";
 
       this.view.show_message(
@@ -82,6 +82,7 @@ class GameController {
       );
 
       setTimeout(() => {
+        // show pause button when the game have load.
         el_btn_menu.textContent = "[:Pause:]";
         el_btn_menu.disabled = false;
         this.view.show_scrn_play(this);
@@ -111,11 +112,14 @@ class GameController {
       // check lose
       if (this.model.balls.length == 0) {
         this.view.show_message("Game Over!", "Ran out of balls!");
+
+        // restart function
         el_btn_menu.onclick = () => {
           this.model.restart();
           this.view.hide_all();
           this.view.show_scrn_menu(this.menu_data);
         };
+        // changing btn text
         el_btn_menu.textContent = "[:Restart:]";
 
         this.running_time = 0;

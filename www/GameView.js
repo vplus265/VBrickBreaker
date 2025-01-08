@@ -44,7 +44,6 @@ class GameView {
     el_main.childNodes.forEach((v, i, arr) => {
       if (v.style) v.style.display = "none";
     });
-    el_btn_menu.textContent = "[:Main:]";
   }
 
   show_scrn_play(controller) {
@@ -56,6 +55,7 @@ class GameView {
     el_btn_menu.style.display = "inline";
     el_btn_menu.onclick = () =>
       setTimeout(() => controller.set_state(controller.MAINMENU_STATE), 300);
+    // change the btn text to show pause when on the play screen
     el_btn_menu.textContent = "[:Pause:]";
   }
 
