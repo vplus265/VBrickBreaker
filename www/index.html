@@ -1,43 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Brick Breaker!</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Brick Breaker!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <body>
+    <div id="el_main">
+      <div id="el_about">[[About the game]]</div>
+      <canvas id="el_canv"> </canvas>
+      <div id="el_play_gui_box">
+        <button id="el_btn_menu" class="gui_btn">[:Menu:]</button>
+        <span id="el_level">[[Level]]</span>
+        <span id="el_score">[[Score]]</span>
+      </div>
 
-<body>
-  <div id="el_main">
-    <div id="el_about">
-      [[About the game]]
-    </div>
-    <canvas id="el_canv"> </canvas>
-    <div id="el_play_gui_box">
-      <button id="el_btn_menu" class="gui_btn">[:Menu:]</button>
-      <span id="el_level">[[Level]]</span>
-      <span id="el_score">[[Score]]</span>
-    </div>
+      <h1 id="el_h1">VBrickBreaker Game</h1>
 
-    <h1 id="el_h1">VBrickBreaker Game</h1>
+      <div id="el_gui_menu">[[Main Menu]]</div>
 
-    <div id="el_gui_menu">
-      [[Main Menu]]
+      <div id="el_message">[[Message]]</div>
     </div>
 
-    <div id="el_message">
-      [[Message]]
-    </div>
-
-
-  </div>
-
-  <script src="GameModel.js"></script>
-  <script src="GameView.js"></script>
-  <script src="GameController.js"></script>
-  <script src="main.js"></script>
-</body>
-
+    <script src="GameModel.js"></script>
+    <script src="GameView.js"></script>
+    <script src="GameController.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
